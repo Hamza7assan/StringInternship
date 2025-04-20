@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Page</title>
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0066cc;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    #demo {
+      margin: 20px 0;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004999;
+    }
+  </style>
+
+  <script>
+    function greetUser() {
+      const userName = prompt("What's your name?");
+      if (userName) {
+        document.getElementById("demo").innerText = `Hello, ${userName}! Welcome to the site 🌟`;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>My Interactive Web Page</h1>
+  <p>This is a simple page using HTML, CSS, and JavaScript.</p>
+
+  <p id="demo">Click the button below to be greeted:</p>
+  <button onclick="greetUser()">Greet Me</button>
+
+  <h2>Things I Used</h2>
+  <ul>
+    <li><strong>HTML</strong> for structure</li>
+    <li><strong>CSS</strong> for styling</li>
+    <li><strong>JavaScript</strong> for interaction</li>
+  </ul>
+
+  <h2>Here’s a cool image:</h2>
+  <img src="https://picsum.photos/300" alt="Random Image" width="300">
+</body>
+</html>
